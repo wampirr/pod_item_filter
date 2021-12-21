@@ -6,8 +6,8 @@ ItemDisplay[hp5]: %RED%!%WHITE%HP
 ItemDisplay[mp5]: %BLUE%!%WHITE%MP
 
 //Money
-ItemDisplay[GOLD>4999]: %NAME%
-ItemDisplay[GOLD]:
+ItemDisplay[GOLD<5000]:
+ItemDisplay[GOLD]: %PRICE% gold
 
 //rejuv potions
 ItemDisplay[rvl]: %PURPLE%RP %ORANGE%70%
