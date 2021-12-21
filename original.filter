@@ -1,47 +1,45 @@
+//Updated 21/07/08
+//UPDATE CONTENTS :  added orb plage base more, marking deletion for tomb reaver non eth, change scepter base marking
 //if you want to turn off drop of potion, add "//" on line start.
-
 ItemDisplay[box]: %NAME% %ORANGE%[L%ILVL%]
 ItemDisplay[box]:{%NL%%ORANGE%HITPOWER:%WHITE%P_SAPIRE+JEWEL+BOOTS+ORT%NL%%RED%BLOOD:%WHITE%P_RUBY+JEWEL+HELMET+RAL%NL%%RED%BLOOD%WHITE%P_RUBY+JEWEL+GLOVE+NEF%NL%%RED%BLOOD:%WHITE%P_RUBY+JEWEL+RING+SOL%NL%%BLUE%CASTER:%WHITE%P_AMETHYST+JEWEL+BELT+ITH%NL%%PURPLE%SOC(ARMOR):%WHITE%P_TOPAZ+TAL+THUL%NL%%PURPLE%SOC(WP):%WHITE%P_AMETHYST+RAL+AMN%NL%}
 ItemDisplay[hp5]: %RED%!%WHITE%HP
 ItemDisplay[mp5]: %BLUE%!%WHITE%MP
 
+//Minor/Light Avaliable until 30lvl, Middle Avaliable until 60lvl, Greater and Scrollos until Nightmare
+ItemDisplay[hp4 DIFFICULTY<2]: %RED%!%WHITE%GreaterHP
+ItemDisplay[hp4 DIFFICULTY=2]:
+ItemDisplay[hp3 CLVL<60]: %RED%!%WHITE%MiddleHP
+ItemDisplay[hp3 CLVL>59]:
+ItemDisplay[hp2 CLVL<30]: %RED%!%WHITE%LightHP
+ItemDisplay[hp2 CLVL>31]:
+ItemDisplay[hp1 CLVL<30]: %RED%!%WHITE%MinorHP
+ItemDisplay[hp1 CLVL>31]:
+ItemDisplay[mp4 DIFFICULTY<2]: %BLUE%!%WHITE%GreaterMP
+ItemDisplay[mp4 DIFFICULTY=2]:
+ItemDisplay[mp3 CLVL<60]: %BLUE%!%WHITE%MiddleMP
+ItemDisplay[mp3 CLVL>59]:
+ItemDisplay[mp2 CLVL<30]: %BLUE%!%WHITE%LightMP
+ItemDisplay[mp2 CLVL>31]:
+ItemDisplay[mp1 CLVL<30]: %BLUE%!%WHITE%MinorMP
+ItemDisplay[mp1 CLVL>31]:
+
+ItemDisplay[tsc DIFFICULTY<2]:%BLUE%*%GRAY%PT
+ItemDisplay[tsc DIFFICULTY=2]:
+ItemDisplay[isc DIFFICULTY<2]:%RED%*%GRAY%ID
+ItemDisplay[isc DIFFICULTY=2]:
+
 //Money
-ItemDisplay[GOLD>=5000]: %PRICE% gold
-ItemDisplay[GOLD<5000]:
-
-//rejuv potions
-ItemDisplay[rvl]: %PURPLE%RP %ORANGE%70%
-ItemDisplay[rvs]: %PURPLE%RP %WHITE%35%
-
-//MISC
-ItemDisplay[key]:
-ItemDisplay[wms]:
-ItemDisplay[yps]:
-ItemDisplay[gpm]:
-ItemDisplay[opm]:
-ItemDisplay[opl]:
-ItemDisplay[ops]:
-ItemDisplay[gps]:
-ItemDisplay[gpl]:
-ItemDisplay[vps]:
-ItemDisplay[isc]:
-ItemDisplay[tsc]:
-
-//Minor/Light disabled
-ItemDisplay[hp4]:
-ItemDisplay[hp3]:
-ItemDisplay[hp2]:
-ItemDisplay[hp1]:
-ItemDisplay[mp4]:
-ItemDisplay[mp3]:
-ItemDisplay[mp2]:
-ItemDisplay[mp1]:
-
+ItemDisplay[GOLD<51 CLVL>0 CLVL<20]:
+ItemDisplay[GOLD<500 CLVL>19 CLVL<30]:
+ItemDisplay[GOLD<1000 CLVL>29 CLVL<40]:
+ItemDisplay[GOLD<1500 CLVL>39 CLVL<50]:
+ItemDisplay[GOLD<2000 CLVL>49 CLVL<60]:
+ItemDisplay[GOLD<2000 CLVL>60]:
 
 //INF ITEM Deletion
 ItemDisplay[INF WEAPON NMAG]:
 ItemDisplay[INF ARMOR NMAG]:
-
 //Relic
 ItemDisplay[(ma1 OR ma5) !ID]:%SOUND-2678%%MAP-62%%NL%    %WHITE%@@ %YELLOW%%NAME% %WHITE%@@    %NL% %NOTIFY-YELLOW%
 ItemDisplay[(ma4 OR ma8 OR ma9) !ID]:%SOUND-2678%%MAP-62%%NL%    %WHITE%@@ %DARK_GREEN%%NAME% %WHITE%@@    %NL% %NOTIFY-DARK_GREEN%
@@ -54,7 +52,6 @@ ItemDisplay[(ma2 OR ma6 OR ma7) MAG]:%RED%%NAME% %ORANGE%TEAR3 %BLUE%[L%ILVL%]%C
 ItemDisplay[(ma2 OR ma6 OR ma7) RARE]:%RED%%NAME% %ORANGE%TEAR3 %YELLOW%[L%ILVL%]%CONTINUE%
 ItemDisplay[(ma1 OR ma2 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9) STAT80>0]:%NAME% %GREEN%MF
 ItemDisplay[(ma1 OR ma2 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9) STAT360=1]:%NAME% %RED%C
-
 //Good Charms
 ItemDisplay[cm3 STAT22>13]: %BLUE%GC %ORANGE%[L%ILVL%]%NL%%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*%TAN%MAX%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*
 ItemDisplay[cm3 (STAT22>9 AND LIFE>39)]: %BLUE%GC %ORANGE%[L%ILVL%]%NL%%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*%TAN%MAX %RED%LIFE%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*
@@ -196,7 +193,28 @@ ItemDisplay[cm3 TABSK48>0]: %PURPLE%TRAP SKILL CHARM %ORANGE%[L%ILVL%]
 
 
 
-
+//Health & Mana Potions
+ItemDisplay[rvl]: %PURPLE%RP %ORANGE%70%
+ItemDisplay[rvs]: %PURPLE%RP %WHITE%35%
+ItemDisplay[key CLVL<30]:Key%PURPLE%*
+ItemDisplay[key CLVL>29]:
+ItemDisplay[wms CLVL<60]:Tha%BLUE%*
+ItemDisplay[wms CLVL>59]:
+ItemDisplay[yps]:Anti%PURPLE%*
+ItemDisplay[gpm CLVL<30]:Gas2%GREEN%*
+ItemDisplay[gpm CLVL>29]:
+ItemDisplay[opm CLVL<30]:Oil2%ORANGE%*
+ItemDisplay[opm CLVL>29]:
+ItemDisplay[opl CLVL<30]:Oil3%ORANGE%*
+ItemDisplay[opl CLVL>29]:
+ItemDisplay[ops CLVL<30]:Oil1%ORANGE%*
+ItemDisplay[ops CLVL>29]:
+ItemDisplay[gps CLVL<30]:Gas1%GREEN%*
+ItemDisplay[gps CLVL>29]:
+ItemDisplay[gpl CLVL<30]:Gas3%GREEN%*
+ItemDisplay[gpl CLVL>29]:
+ItemDisplay[vps CLVL<30]:Sta%GRAY%*
+ItemDisplay[vps CLVL>29]:
 
 //Essences (Respec Token)
 ItemDisplay[tes]: %MAP-0B%%RED%*****%YELLOW%*****%GREEN%*****%BLUE%*****%NL%%NL% %GOLD%Suffering(Anda) %NL%%NL%%RED%*****%YELLOW%*****%GREEN%*****%BLUE%*****%NOTIFY-GOLD%
