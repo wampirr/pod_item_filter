@@ -214,14 +214,11 @@ ItemDisplay[UNI !ID cm4]: %SOUND-2664%%MAP-0B%%NL%   %RED%%NAME%   %NL% %NOTIFY-
 ItemDisplay[(pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr)]: %MAP-0B%%RED%*****%YELLOW%*****%GREEN%*****%BLUE%*****%NL%%NL% %DARK_GREEN%%NAME% %NL%%NL%%RED%*****%YELLOW%*****%GREEN%*****%BLUE%*****%NOTIFY-DARK_GREEN%
 //Tomes
 ItemDisplay[(tbk OR ibk)]: %WHITE%%NAME%
-//Hide MAGIC Quivers & Bolts above level 30
-ItemDisplay[aq2 RARE !ID]: %DOT-6F%%YELLOW%***************%NL%%NL% %GREEN%°%YELLOW%%NAME%%GREEN%° %NL%%NL%%YELLOW%***************
-ItemDisplay[(aq2 OR cq2) UNI !ID CLVL<80]: %NAME%
-ItemDisplay[(aq2 OR cq2) UNI !ID CLVL>79]:
-ItemDisplay[(aq2 OR cq2) MAG !ID DIFFICULTY<2]: %NAME%
-ItemDisplay[(aq2 OR cq2) MAG !ID DIFFICULTY=2]:
-ItemDisplay[cq2 RARE !ID CLVL<80]: %NAME%
-ItemDisplay[cq2 RARE !ID CLVL>79]:
+//Hide MAGIC Quivers & Bolts
+ItemDisplay[(aq2 OR cq2) RARE !ID]: %DOT-6F%%YELLOW%***************%NL%%NL% %GREEN%°%YELLOW%%NAME%%GREEN%° %NL%%NL%%YELLOW%***************
+ItemDisplay[(aq2 OR cq2) UNI !ID]: %NAME%
+ItemDisplay[(aq2 OR cq2) MAG !ID]:
+ItemDisplay[(aq2 OR cq2) NMAG]:
 //misc
 ItemDisplay[(bbb OR ass OR bkd OR bks OR box OR g34 OR ice OR j34 OR mss OR qbr OR qey OR qhr OR tr1 OR tr2 OR xyz)]: %TAN%%NAME%
 
@@ -278,56 +275,11 @@ ItemDisplay[RUNE>19 RUNE<24]:%SOUND-2664%%MAP-9B%%RED%*****%ORANGE%*****%YELLOW%
 ItemDisplay[RUNE>23]:%SOUND-418%%BORDER-62%%RED%*****%ORANGE%*****%YELLOW%*****%GREEN%*****%BLUE%*****%PURPLE%*****%NL%%NL%%RED%%RUNENAME%%PURPLE%[%RUNENUM%]%NL%%NL%%RED%*****%ORANGE%*****%YELLOW%*****%GREEN%*****%BLUE%*****%PURPLE%*****%NOTIFY-RED%
 ItemDisplay[RUNE=8]:{%YELLOW%Reparing Armor : %RED%RAL%WHITE%+ARMOR%NL%}
 ItemDisplay[RUNE=9]:{%YELLOW%Reparing Weapon : %ORANGE%ORT%WHITE%+WEAPON%NL%}
+
 //Gems Chipped/Flawed/Normal
-//ItemDisplay[GEMLEVEL<4 CLVL<80]: %NAME%
-//ItemDisplay[GEMLEVEL<4 DIFFICULTY>1]:
-//Gems Chipped
-ItemDisplay[gcv CLVL<40]: %GRAY%Chipped%ORANGE%[%PURPLE%@%ORANGE%]
-ItemDisplay[gcw CLVL<40]: %GRAY%Chipped%ORANGE%[%WHITE%@%ORANGE%]
-ItemDisplay[gcg CLVL<40]: %GRAY%Chipped%ORANGE%[%GREEN%@%ORANGE%]
-ItemDisplay[gcr CLVL<40]: %GRAY%Chipped%ORANGE%[%RED%@%ORANGE%]
-ItemDisplay[gcb CLVL<40]: %GRAY%Chipped%ORANGE%[%BLUE%@%ORANGE%]
-ItemDisplay[gcy CLVL<40]: %GRAY%Chipped%ORANGE%[%YELLOW%@%ORANGE%]
-ItemDisplay[skc CLVL<40]: %GRAY%Chipped%ORANGE%[%GOLD%@%ORANGE%]
-ItemDisplay[gcv CLVL>39]:
-ItemDisplay[gcw CLVL>39]:
-ItemDisplay[gcg CLVL>39]:
-ItemDisplay[gcr CLVL>39]:
-ItemDisplay[gcb CLVL>39]:
-ItemDisplay[gcy CLVL>39]:
-ItemDisplay[skc CLVL>39]:
-//Gems Flawed
-ItemDisplay[gfv CLVL<60]: %GRAY%Flawed%ORANGE%[%PURPLE%@%ORANGE%]
-ItemDisplay[gfw CLVL<60]: %GRAY%Flawed%ORANGE%[%WHITE%@%ORANGE%]
-ItemDisplay[gfg CLVL<60]: %GRAY%Flawed%ORANGE%[%GREEN%@%ORANGE%]
-ItemDisplay[gfr CLVL<60]: %GRAY%Flawed%ORANGE%[%RED%@%ORANGE%]
-ItemDisplay[gfb CLVL<60]: %GRAY%Flawed%ORANGE%[%BLUE%@%ORANGE%]
-ItemDisplay[gfy CLVL<60]: %GRAY%Flawed%ORANGE%[%YELLOW%@%ORANGE%]
-ItemDisplay[skf CLVL<60]: %GRAY%Flawed%ORANGE%[%GOLD%@%ORANGE%]
-ItemDisplay[gfv CLVL>59]:
-ItemDisplay[gfw CLVL>59]:
-ItemDisplay[gfg CLVL>59]:
-ItemDisplay[gfr CLVL>59]:
-ItemDisplay[gfb CLVL>59]:
-ItemDisplay[gfy CLVL>59]:
-ItemDisplay[skf CLVL>59]:
-//Gems Normal
-ItemDisplay[gsv CLVL<70]: %GRAY%Regular%ORANGE%[%PURPLE%@%ORANGE%]
-ItemDisplay[gsw CLVL<70]: %GRAY%Regular%ORANGE%[%WHITE%@%ORANGE%]
-ItemDisplay[gsg CLVL<70]: %GRAY%Regular%ORANGE%[%GREEN%@%ORANGE%]
-ItemDisplay[gsr CLVL<70]: %GRAY%Regular%ORANGE%[%RED%@%ORANGE%]
-ItemDisplay[gsb CLVL<70]: %GRAY%Regular%ORANGE%[%BLUE%@%ORANGE%]
-ItemDisplay[gsy CLVL<70]: %GRAY%Regular%ORANGE%[%YELLOW%@%ORANGE%]
-ItemDisplay[sku CLVL<70]: %GRAY%Regular%ORANGE%[%GOLD%@%ORANGE%]
-ItemDisplay[gsv CLVL>69]:
-ItemDisplay[gsw CLVL>69]:
-ItemDisplay[gsg CLVL>69]:
-ItemDisplay[gsr CLVL>69]:
-ItemDisplay[gsb CLVL>69]:
-ItemDisplay[gsy CLVL>69]:
-ItemDisplay[sku CLVL>69]:
+ItemDisplay[GEMLEVEL<4]:
 //Gems flawless
-ItemDisplay[gzv]: %NL%   %YELLOW%!%ORANGE%AMETHYST[%PURPLE%@%ORANGE%]   %NL%
+ItemDisplay[gzv]: %NL%   %NAME%   %NL%
 ItemDisplay[glw]: %YELLOW%!%GRAY%DIAMOND%ORANGE%[%WHITE%@%ORANGE%]
 ItemDisplay[glg]: %NL%   %YELLOW%!%ORANGE%EMERALD[%GREEN%@%ORANGE%]   %NL%
 ItemDisplay[glr]: %NL%   %YELLOW%!%ORANGE%RUBY[%RED%@%ORANGE%]   %NL%
@@ -358,6 +310,7 @@ ItemDisplay[gpr]:{%NL%%GREEN%SET WEAPON UP%NL%%ORANGE%EL%WHITE%+%ORANGE%ETH%WHIT
 ItemDisplay[gpb]:{%NL%%YELLOW%RARE WEAPON UP%NL%%ORANGE%ORT%WHITE%+%ORANGE%AMN%WHITE%+%BLUE%P_SAPIRE%RED%<EXC>%NL%%ORANGE%FAL%WHITE%+%ORANGE%UM%WHITE%+%BLUE%P_SAPIRE%RED%<ELITE>%NL%}
 ItemDisplay[gpy]:{%NL%%GREEN%SET ARMOR UP%NL%%ORANGE%ELD%WHITE%+%ORANGE%ITH%WHITE%+%YELLOW%P_TOPAZ%RED%<EXC>%NL%%ORANGE%HEL%WHITE%+%ORANGE%IO%WHITE%+%YELLOW%P_TOPAZ%RED%<ELITE>%NL%}
 ItemDisplay[skz]:{%NL%%YELLOW%RARE OPTION CHANGE %NL%%ORANGE%P_SKULL*6%WHITE%+%YELLOW%RARE ITEM}
+
 //RARES
 //Best Rares/magic (Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels)
 ItemDisplay[RARE EQ7 !ETH !ID]: %DOT-6F%%YELLOW%***************%NL%%NL% %GREEN%°%YELLOW%%NAME%%GREEN%° %NL%%NL%%YELLOW%***************
@@ -457,10 +410,9 @@ ItemDisplay[MAG rin ID ]: %BLUE%%NAME%
 ItemDisplay[MAG amu]:{%NL%%WHITE%JEWEL+AMULET+RAL+P_AMETHYST%NL%%ORANGE%CASTER CRAFT}
 ItemDisplay[MAG rin]:{%NL%%WHITE%JEWEL+RING+AMN+P_AMETHYST%NL%%ORANGE%CASTER CRAFT}
 //Charms/JEWELS
+ItemDisplay[MAG cm2 !ID]:
 ItemDisplay[MAG cm1 !ID]: %DOT-97%%BLUE%***************%NL%%NL% %GREEN%°%BLUE%SC %ORANGE%[L%ILVL%]%GREEN%° %NL%%NL%%BLUE%***************
 ItemDisplay[MAG cm3 !ID]: %DOT-97%%BLUE%***************%NL%%NL% %GREEN%°%BLUE%GC %ORANGE%[L%ILVL%]%GREEN%° %NL%%NL%%BLUE%***************
-//If you delete //, it will be appear
-//ItemDisplay[MAG cm2 !ID]: %DOT-97%LC %ORANGE%[L%ILVL%]
 ItemDisplay[MAG jew !ID]: %DOT-6F%%BLUE%***************%NL%%NL%%GREEN%°%BLUE%%NAME% %ORANGE%[L%ILVL%]%GREEN%°%NL%%NL%%BLUE%***************
 //IAS, STAT17=ed, STAT22=max, STAT86=each kill life, FHR, STAT91=req
 ItemDisplay[RARE jew (IAS>0 AND STAT17>0)]: %YELLOW%%NAME%%ORANGE%[L%ILVL%] %NL% %RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*%WHITE%ED %RED%IAS%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*%GRAY%*%PURPLE%*
