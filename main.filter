@@ -279,7 +279,7 @@ ItemDisplay[RUNE=9]:{%YELLOW%Reparing Weapon : %ORANGE%ORT%WHITE%+WEAPON%NL%}
 //Gems Chipped/Flawed/Normal
 ItemDisplay[GEMLEVEL<4]:
 //Gems flawless
-ItemDisplay[gzv]: %NL%   %NAME%   %NL%
+ItemDisplay[gzv]: %NL%   %YELLOW%!%ORANGE%AMETHYST[%PURPLE%@%ORANGE%]   %NL%
 ItemDisplay[glw]: %YELLOW%!%GRAY%DIAMOND%ORANGE%[%WHITE%@%ORANGE%]
 ItemDisplay[glg]: %NL%   %YELLOW%!%ORANGE%EMERALD[%GREEN%@%ORANGE%]   %NL%
 ItemDisplay[glr]: %NL%   %YELLOW%!%ORANGE%RUBY[%RED%@%ORANGE%]   %NL%
