@@ -44,20 +44,17 @@ ItemDisplay[INF]:
 ItemDisplay[cm2]:
 
 //COLOR
-ItemDisplay[ETH]: %GRAY%[ETH] %CONTINUE%
-ItemDisplay[SUP]: %WHITE%%CONTINUE%
-ItemDisplay[MAG]: %BLUE%%CONTINUE%
-ItemDisplay[RARE]: %YELLOW%%CONTINUE%
-ItemDisplay[UNI]: %GOLD%%CONTINUE%
-ItemDisplay[SET]: %GREEN%%CONTINUE%
-ItemDisplay[RW]: %TAN%%CONTINUE%
-ItemDisplay[NMAG]: %WHITE%%CONTINUE%
+ItemDisplay[ETH]: %PURPLE%[ETH] %GRAY%%NAME%%CONTINUE%
+ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
+ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
+ItemDisplay[RW]: %TAN%%NAME%%CONTINUE%
+ItemDisplay[NMAG !ETH]: %WHITE%%NAME%%CONTINUE%
 
-ItemDisplay[]: %NAME% %CONTINUE%
+ItemDisplay[SUP ED > 0]: %NAME% %DGREEN%ED%CONTINUE%
+ItemDisplay[SUP AND STAT91 > 0]: %NAME% %DGREEN%REQ%CONTINUE%
 
-ItemDisplay[(SUP OR RW OR ETH OR NMAG) AND ED > 0]: %DGREEN%ED %CONTINUE%
-ItemDisplay[(SUP OR RW OR ETH OR NMAG) AND STAT91 > 0]: %DGREEN%REQ %CONTINUE%
+ItemDisplay[SOCK > 0]: %NAME% %PURPLE%[%SOCKETS%] %CONTINUE%
 
-ItemDisplay[SOCK > 0]: %PURPLE%[%SOCKETS%] %CONTINUE%
-
-ItemDisplay[]:%RED%
+ItemDisplay[]: %NAME%
