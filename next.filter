@@ -44,17 +44,18 @@ ItemDisplay[INF]:
 ItemDisplay[cm2]:
 
 //COLOR
-ItemDisplay[ETH]: %PURPLE%[ETH] %GRAY%%NAME%%CONTINUE%
 ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
 ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
 ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
 ItemDisplay[RW]: %TAN%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ETH]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG ETH]: %GREY%%NAME%%CONTINUE%
+ItemDisplay[ETH]: %PURPLE%[ETH] %NAME%%CONTINUE%
 
 ItemDisplay[SUP ED > 0]: %NAME% %DGREEN%ED%CONTINUE%
-ItemDisplay[SUP AND STAT91 > 0]: %NAME% %DGREEN%REQ%CONTINUE%
+ItemDisplay[SUP STAT91 > 0]: %NAME% %DGREEN%REQ%CONTINUE%
 
-ItemDisplay[SOCK > 0]: %NAME% %PURPLE%[%SOCKETS%] %CONTINUE%
+ItemDisplay[SOCK > 0]: %NAME% %PURPLE%[%SOCKETS%]%CONTINUE%
 
 ItemDisplay[]: %NAME%
