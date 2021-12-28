@@ -68,4 +68,8 @@ ItemDisplay[SUP STAT91>0]: %NAME% %DGREEN%REQ%CONTINUE%
 
 ItemDisplay[SOCK>0]: %NAME% %PURPLE%[%SOCKETS%]%CONTINUE%
 
+ItemDisplay[NORM]: {%YELLOW%Normal}
+ItemDisplay[EXC]: {%YELLOW%Exceptional}
+ItemDisplay[ELT]: {%YELLOW%Elite}
+
 ItemDisplay[]: %NAME%
