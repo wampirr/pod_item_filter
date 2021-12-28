@@ -40,9 +40,12 @@ ItemDisplay[mp1]:
 ItemDisplay[INF]:
 //ItemDisplay[INF ARMOR NMAG]:
 
+//HIDES
+ItemDisplay[cm2]:
+
 //COLOR
+ItemDisplay[ETH]: %GRAY%[ETH] %CONTINUE%
 ItemDisplay[SUP]: %WHITE%%CONTINUE%
-ItemDisplay[ETH]: %GRAY%%CONTINUE%
 ItemDisplay[MAG]: %BLUE%%CONTINUE%
 ItemDisplay[RARE]: %YELLOW%%CONTINUE%
 ItemDisplay[UNI]: %GOLD%%CONTINUE%
@@ -50,4 +53,9 @@ ItemDisplay[SET]: %GREEN%%CONTINUE%
 ItemDisplay[RW]: %TAN%%CONTINUE%
 ItemDisplay[NMAG]: %WHITE%%CONTINUE%
 
-ItemDisplay[]: %NAME%
+ItemDisplay[]: %NAME% %CONTINUE%
+
+ItemDisplay[(SUP OR RW OR ETH OR NMAG) AND ED > 0]: %DGREEN%ED %CONTINUE%
+ItemDisplay[(SUP OR RW OR ETH OR NMAG) AND STAT91 > 0]: %DGREEN%REQ %CONTINUE%
+
+ItemDisplay[SOCK > 0]: %PURPLE%[%SOCKETS%] %CONTINUE%
