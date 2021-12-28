@@ -1,0 +1,53 @@
+
+ItemDisplay[box]: %NAME% %ORANGE%[L%ILVL%]
+ItemDisplay[box]:{%NL%%ORANGE%HITPOWER:%WHITE%P_SAPIRE+JEWEL+BOOTS+ORT%NL%%RED%BLOOD:%WHITE%P_RUBY+JEWEL+HELMET+RAL%NL%%RED%BLOOD%WHITE%P_RUBY+JEWEL+GLOVE+NEF%NL%%RED%BLOOD:%WHITE%P_RUBY+JEWEL+RING+SOL%NL%%BLUE%CASTER:%WHITE%P_AMETHYST+JEWEL+BELT+ITH%NL%%PURPLE%SOC(ARMOR):%WHITE%P_TOPAZ+TAL+THUL%NL%%PURPLE%SOC(WP):%WHITE%P_AMETHYST+RAL+AMN%NL%}
+ItemDisplay[hp5]: %RED%!%WHITE%HP
+ItemDisplay[mp5]: %BLUE%!%WHITE%MP
+
+//Money
+ItemDisplay[GOLD<5000]:
+ItemDisplay[GOLD]: %PRICE% gold
+
+//MISC
+ItemDisplay[key]:
+ItemDisplay[wms]:
+ItemDisplay[yps]:
+ItemDisplay[gpm]:
+ItemDisplay[opm]:
+ItemDisplay[opl]:
+ItemDisplay[ops]:
+ItemDisplay[gps]:
+ItemDisplay[gpl]:
+ItemDisplay[vps]:
+ItemDisplay[isc]:
+ItemDisplay[tsc]:
+
+//rejuv potions
+ItemDisplay[rvl]: %PURPLE%RP %ORANGE%70%
+ItemDisplay[rvs]: %PURPLE%RP %WHITE%35%
+
+//Minor/Light disabled
+ItemDisplay[hp4]:
+ItemDisplay[hp3]:
+ItemDisplay[hp2]:
+ItemDisplay[hp1]:
+ItemDisplay[mp4]:
+ItemDisplay[mp3]:
+ItemDisplay[mp2]:
+ItemDisplay[mp1]:
+
+//INF ITEM Deletion
+ItemDisplay[INF]:
+//ItemDisplay[INF ARMOR NMAG]:
+
+//COLOR
+ItemDisplay[SUP]: %WHITE%%CONTINUE%
+ItemDisplay[ETH]: %GRAY%%CONTINUE%
+ItemDisplay[MAG]: %BLUE%%CONTINUE%
+ItemDisplay[RARE]: %YELLOW%%CONTINUE%
+ItemDisplay[UNI]: %GOLD%%CONTINUE%
+ItemDisplay[SET]: %GREEN%%CONTINUE%
+ItemDisplay[RW]: %TAN%%CONTINUE%
+ItemDisplay[NMAG]: %WHITE%%CONTINUE%
+
+ItemDisplay[]: %NAME%
