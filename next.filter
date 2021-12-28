@@ -75,4 +75,4 @@ ItemDisplay[NORM]: {%YELLOW%Normal}%CONTINUE%
 ItemDisplay[EXC]: {%YELLOW%Exceptional}%CONTINUE%
 ItemDisplay[ELT]: {%YELLOW%Elite}%CONTINUE%
 
-ItemDisplay[]: %NL%%NAME%%NL%
+ItemDisplay[]: %NL%%NAME%%ILVL%%NL%
