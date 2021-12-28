@@ -50,4 +50,4 @@ ItemDisplay[SET]: %GREEN%%CONTINUE%
 ItemDisplay[RW]: %TAN%%CONTINUE%
 ItemDisplay[NMAG]: %WHITE%%CONTINUE%
 
-ItemDisplay[]: %NAME%
+ItemDisplay[]: %CONTINUE%%NAME%
