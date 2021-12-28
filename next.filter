@@ -37,11 +37,19 @@ ItemDisplay[mp2]:
 ItemDisplay[mp1]:
 
 //INF ITEM Deletion
-ItemDisplay[INF]:
+//ItemDisplay[INF]:
 //ItemDisplay[INF ARMOR NMAG]:
 
 //HIDES
+//norm
+ItemDisplay[NMAG WEAPON ARMOR !SUP !ETH]:
+ItemDisplay[NMAG WEAPON ARMOR SUP !ELT !ETH]:
+ItemDisplay[NMAG SOCK=1]:
+//magic
 ItemDisplay[cm2]:
+ItemDisplay[aq2 MAG]:
+ItemDisplay[cq2 MAG]:
+ItemDisplay[MAG WEAPON ARMOR]:
 
 //COLOR
 ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
