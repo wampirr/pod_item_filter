@@ -51,7 +51,7 @@ ItemDisplay[GEMLEVEL<4]:
 ItemDisplay[cm2 MAG]:
 ItemDisplay[aq2 MAG]:
 ItemDisplay[cq2 MAG]:
-ItemDisplay[(WEAPON OR ARMOR) MAG !(CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
+//ItemDisplay[(WEAPON OR ARMOR) MAG !(CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
 
 //COLOR
 ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
@@ -75,4 +75,4 @@ ItemDisplay[NORM]: {%YELLOW%Normal}
 ItemDisplay[EXC]: {%YELLOW%Exceptional}
 ItemDisplay[ELT]: {%YELLOW%Elite}
 
-ItemDisplay[]: %NAME%
+ItemDisplay[]: %NL%%NAME%%NL%
