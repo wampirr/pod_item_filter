@@ -36,23 +36,21 @@ ItemDisplay[mp3]:
 ItemDisplay[mp2]:
 ItemDisplay[mp1]:
 
-//INF ITEM Deletion
-//ItemDisplay[INF]:
-//ItemDisplay[INF ARMOR NMAG]:
-
 //HIDES
 //norm
-ItemDisplay[NMAG (WEAPON OR ARMOR) (!SUP OR !ELT) !ETH !(WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
-//ItemDisplay[NMAG (WEAPON OR ARMOR) SUP !ELT !ETH]:
+ItemDisplay[INF]:
+//ItemDisplay[NMAG (WEAPON OR ARMOR) !(ELT OR WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
+ItemDisplay[NMAG (WEAPON OR ARMOR) !( ((SUP OR ETH) ELT) OR WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
 ItemDisplay[NMAG SOCK=1]:
-ItemDisplay[GEMLEVEL<4 !RUNE ]:
+ItemDisplay[GEMLEVEL<4 !RUNE]:
 
 //magic
 ItemDisplay[cm2 MAG]:
 ItemDisplay[aq2 MAG]:
 ItemDisplay[cq2 MAG]:
-ItemDisplay[(WEAPON OR ARMOR) MAG !(WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
+ItemDisplay[MAG (WEAPON OR ARMOR) !(WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
 //rare
+ItemDisplay[RARE (WEAPON OR ARMOR) !(ELT OR WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]:
 
 
 //COLOR
@@ -77,9 +75,9 @@ ItemDisplay[STAT360=1]: %NAME% %RED%C%CONTINUE%
 
 
 //ADVICE
-ItemDisplay[NORM]: {%YELLOW%(%QT%)}%CONTINUE%
-ItemDisplay[EXC]: {%YELLOW%(%QT%)}%CONTINUE%
-ItemDisplay[ELT]: {%YELLOW%(%QT%)}%CONTINUE%
+//ItemDisplay[NORM]: {%YELLOW%(%QT%)}%CONTINUE%
+//ItemDisplay[EXC]: {%YELLOW%(%QT%)}%CONTINUE%
+//ItemDisplay[ELT]: {%YELLOW%(%QT%)}%CONTINUE%
 
 ItemDisplay[ID ELT]: {%YELLOW%(%QT%)}%CONTINUE%
 
